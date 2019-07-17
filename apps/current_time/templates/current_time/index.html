@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'current_time/css/style.css' %}">
+    <script src="{% static 'current_time/js/script.js' %}"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="vh-100 d-flex align-items-center">
+        <div class="mx-auto">
+            <div class="top_box">
+                <h1>The current time and date:</h1>
+            </div>
+
+            <div class=" bottom_box">
+                <h1>{{date}}</h1>
+                <h1>{{time}}</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
